@@ -5,9 +5,6 @@
  * Look for bad coding practices, as well as logic and syntax errors.
  */
 import java.util.Scanner;
-
-
-
 public class EggsDemo{ 
 	
 	public static void main(String[] args) {
@@ -22,9 +19,9 @@ public class EggsDemo{
 		System.out.print("How many eggs do you want? >> ");
 		eggs = sc.nextInt();
 		
-		//Thisis the calculations!
+		//This the calculations!
 		dozens = eggs / 12;
-		singles = eggs * 12;
+		singles = eggs % 12;
 		dozensCost = dozens * PRICE_PER_DOZEN;
 		singlesCost = singles * PRICE_PER_SINGLE;
 		totalCost = PRICE_PER_DOZEN + PRICE_PER_SINGLE;
